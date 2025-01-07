@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="850.0" styleClass="create_client_container" stylesheets="@../../Styles/CreateClient.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.benedict.minibank.Controllers.Admin.CreateClientController">
+   <children>
+       <Text layoutX="34.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sukurti naują klientą" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+       <VBox fillWidth="false" layoutX="21.0" layoutY="46.0" prefHeight="500.0" prefWidth="600.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="40.0">
+          <children>
+              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vardas:" />
+              <TextField fx:id="fName_fld" />
+              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pavardė" />
+              <TextField fx:id="lName_fld" />
+              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SLaptažodis:" />
+              <PasswordField fx:id="password_fld" />
+              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mokėtojo adresas:" />
+              <CheckBox fx:id="pAddress_box" mnemonicParsing="false" />
+              <Label fx:id="pAddress_lbl" styleClass="payee_address_lbl" text="" />
+              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sąskaistos:" />
+              <CheckBox fx:id="ch_acc_chk_box" mnemonicParsing="false" text="Pridėti kreditinę sąskaitą:" />
+              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kreditinės sąskaitos balansas" />
+              <TextField fx:id="ch_amount_fld" />
+              <CheckBox fx:id="sv_acc_chk_box" mnemonicParsing="false" text="Pridėti debetinę sąskaitą" />
+              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Debetinės sąskaitos balansas" />
+              <TextField fx:id="sv_amount_fld" />
+              <Button fx:id="create_client_btn" mnemonicParsing="false" text="Sukurti naują klientą">
+        </Button>
+              <Label fx:id="error_lbl" styleClass="error_lbl" text="Klaida" />
+          </children>
+       </VBox>
+   </children>
+</AnchorPane>

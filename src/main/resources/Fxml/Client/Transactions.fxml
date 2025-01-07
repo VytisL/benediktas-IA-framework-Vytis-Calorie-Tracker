@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="transactions_container"
+            stylesheets="@../../Styles/Transactions.css" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <Text layoutX="288.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transakcijos"
+          AnchorPane.leftAnchor="349.0" AnchorPane.topAnchor="14.0"/>
+    <ListView fx:id="transaction_listview" layoutX="325.0" layoutY="250.0" prefHeight="640.0" prefWidth="830.0"
+              AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="100.0"/>
+</AnchorPane>
